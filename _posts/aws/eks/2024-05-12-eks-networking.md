@@ -7,7 +7,7 @@ tags: [aws, eks, vpc, subnet]
 ---
 
 
-# 클러스터 엔드포인트 액세스 제어
+## 클러스터 엔드포인트 액세스 제어
 [클러스터 엔드포인트](https://docs.aws.amazon.com/ko_kr/eks/latest/userguide/cluster-endpoint.html)
 
 -> k8s api-server와 통신(kubectl)하기 위함

@@ -6,8 +6,6 @@ categories: [AWS, Cost Savings]
 tags: [opsnow360]
 ---
 
-# OpsNow360 분석을 통한 비용절감
-
 ## 많이 나오는 리소스 확인
 1. 상세 데이터 엑셀파일 추출
 2. 피봇테이블 추출해서 USETYPE으로 많이나오는 Type 확인
