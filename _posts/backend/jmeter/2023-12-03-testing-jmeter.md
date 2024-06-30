@@ -120,7 +120,7 @@ java -cp jmeter/lib/ext/jmeter-plugins-manager-x.x.jar org.jmeterplugins.reposit
 
 **1. Controller(Master) 서버**
 
-- remote_hosts = [172.xxx](http://172.xxx).xxx.xxx
+- remote_hosts = `[172.xxx](http://172.xxx).xxx.xxx`
 - server.rmi.ssl.keystore.file (SSL 설정 활성화 시)
   - server.rmi.ssl.disable = true (SSL 설정 비활성화 시)
 - client.rmi.localport = 4000 (b)
