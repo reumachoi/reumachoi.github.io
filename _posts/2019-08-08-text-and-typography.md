@@ -19,17 +19,23 @@ This post is to show Markdown syntax rendering on [**Chirpy**](https://github.co
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
+
 # H1 - heading
+
 {: .mt-4 .mb-0 }
 
 ## H2 - heading
+
 {: data-toc-skip='' .mt-4 .mb-0 }
 
 ### H3 - heading
+
 {: data-toc-skip='' .mt-4 .mb-0 }
 
 #### H4 - heading
+
 {: data-toc-skip='' .mt-4 }
+
 <!-- markdownlint-restore -->
 
 ## Paragraph
@@ -73,17 +79,19 @@ Moon
 
 <!-- markdownlint-capture -->
 <!-- markdownlint-disable -->
+
 > An example showing the `tip` type prompt.
-{: .prompt-tip }
+> {: .prompt-tip }
 
 > An example showing the `info` type prompt.
-{: .prompt-info }
+> {: .prompt-info }
 
 > An example showing the `warning` type prompt.
-{: .prompt-warning }
+> {: .prompt-warning }
 
 > An example showing the `danger` type prompt.
-{: .prompt-danger }
+> {: .prompt-danger }
+
 <!-- markdownlint-restore -->
 
 ## Tables
@@ -134,7 +142,8 @@ fi;
   "colors/light-typography",
   "colors/dark-typography";
 ```
-{: file='_sass/jekyll-theme-chirpy.scss'}
+
+{: file='\_sass/jekyll-theme-chirpy.scss'}
 
 ## Mathematics
 
@@ -190,10 +199,6 @@ The image below will toggle dark/light mode based on theme preference, notice it
 
 ![light mode only](/posts/20190808/devtools-light.png){: .light .w-75 .shadow .rounded-10 w='1212' h='668' }
 ![dark mode only](/posts/20190808/devtools-dark.png){: .dark .w-75 .shadow .rounded-10 w='1212' h='668' }
-
-## Video
-
-{% include embed/youtube.html id='Balreaj8Yqs' %}
 
 ## Reverse Footnote
 

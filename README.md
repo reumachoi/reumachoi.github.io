@@ -35,4 +35,6 @@
 To learn how to use, develop, and upgrade the project, please refer to the [Wiki][wiki].
 
 ## 실행방법
-로컬 테스트 `jekyll serve`
+
+로컬 테스트 `jekyll serve`  
+운영 배포 `jekyll build`
