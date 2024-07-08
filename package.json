@@ -29,9 +29,9 @@
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-terser": "^0.4.4",
     "husky": "^9.0.11",
-    "rimraf": "^5.0.7",
+    "rimraf": "^5.0.8",
     "rollup": "^4.18.0",
-    "rollup-plugin-license": "^3.4.0",
+    "rollup-plugin-license": "^3.5.2",
     "stylelint": "^16.6.1",
     "stylelint-config-standard-scss": "^13.1.0"
   },
