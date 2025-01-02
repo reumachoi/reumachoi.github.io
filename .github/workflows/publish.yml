@@ -3,7 +3,7 @@ name: Publish
 on:
   push:
     branches:
-      - docs
+    - docs
   workflow_call:
     secrets:
       GH_PAT:
@@ -12,12 +12,13 @@ on:
         required: true
   workflow_dispatch:
 
+
 jobs:
   launch:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - run: |
-          curl -X POST -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
-            https://api.github.com/repos/${{ secrets.BUILDER }}/dispatches \
-            -d '{"event_type":"deploy", "client_payload":{"branch": "${{ github.ref_name }}"}}'
+    - run: |
+        curl -X POST -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${{ secrets.GH_PAT }}" \
+          https://api.github.com/repos/${{ secrets.BUILDER }}/dispatches \
+          -d '{"event_type":"deploy", "client_payload":{"branch": "${{ github.ref_name }}"}}'
