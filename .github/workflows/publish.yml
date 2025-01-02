@@ -14,7 +14,7 @@ on:
 
 jobs:
   launch:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
       - run: |
           curl -X POST -H "Accept: application/vnd.github+json" \

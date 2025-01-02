@@ -3,13 +3,14 @@ name: Lint Commit Messages
 on:
   push:
     branches:
-      - master
-      - "hotfix/*"
+    - master
+    - "hotfix/*"
   pull_request:
+
 
 jobs:
   commitlint:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
-      - uses: wagoid/commitlint-github-action@v6
+    - uses: actions/checkout@v4
+    - uses: wagoid/commitlint-github-action@v6
