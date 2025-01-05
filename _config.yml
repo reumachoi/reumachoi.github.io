@@ -46,8 +46,7 @@ social:
 
 author:
   name: rumi
-  url: https://rumi.github.io
-  # Site Verification Settings
+  url: # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
   bing: # fill in your Bing verification code
