@@ -34,7 +34,7 @@ twitter:
 social:
   # Change to your full name.
   # It will be displayed as the default author of the posts and the copyright owner in the Footer
-  name: Areum Choi
+  name: rumi
   email: reumaco99@gmail.com # change to your email address
   links:
   # The first element serves as the copyright owner's link
@@ -44,6 +44,9 @@ social:
   # - https://www.facebook.com/username
   # - https://www.linkedin.com/in/username
 
+author:
+  name: rumi
+  url: https://rumi.github.io
   # Site Verification Settings
 webmaster_verifications:
   google: # fill in your Google verification code
