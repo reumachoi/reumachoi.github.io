@@ -38,15 +38,16 @@ social:
   email: reumaco99@gmail.com # change to your email address
   links:
   # The first element serves as the copyright owner's link
-  - https://twitter.com/username # change to your twitter homepage
   - https://github.com/reumachoi # change to your github homepage
-  # Uncomment below to add more social links
-  # - https://www.facebook.com/username
-  # - https://www.linkedin.com/in/username
+  - https://www.linkedin.com/in/areum-choi9/ # change to your linkedin homepage
 
 author:
   name: rumi
-  url: # Site Verification Settings
+  url:
+    # Site Verification Settings
+
+google_site_verification: H0nLL3jfmunju1FB0hHSSg1yYc7bpMl_YY7wtGY4K-4
+
 webmaster_verifications:
   google: # fill in your Google verification code
   bing: # fill in your Bing verification code
@@ -232,3 +233,5 @@ jekyll-archives:
 
 plugins:
 - jekyll-archives
+- jekyll-seo-tag
+- jekyll-sitemap
