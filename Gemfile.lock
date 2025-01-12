@@ -196,6 +196,7 @@ PLATFORMS
 DEPENDENCIES
   html-proofer
   jekyll-archives
+  jekyll-seo-tag
   jekyll-sitemap
   jekyll-theme-chirpy!
   tzinfo (>= 1, < 3)
