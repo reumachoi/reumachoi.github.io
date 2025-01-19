@@ -28,7 +28,6 @@ tags: [Kubestronaut, Kubernetes, CKA, CKAD, CKS, KCNA, KCSA]
 - 덤프 문제 4세트  
 2025년 버전: [KCNA](https://www.udemy.com/course/kubernetes-and-cloud-native-associate-kcna-exam-questions/?couponCode=KEEPLEARNING), [KCSA](https://www.udemy.com/course/kubernetes-and-cloud-native-security-associate-cert-practice-exam-prep/?couponCode=KEEPLEARNING)  
 -> KCNA는 강의 없이도 가능했지만, KCSA는 문제 유형 파악을 위해 유데미 강의를 구매해서 활용했습니다.
-![kcsa-udemy](/assets/img/posts/certification/udemy-kcsa.png)
 
 깃헙 레포 추천: https://paulyu.dev/article/kcsa-study-guide/, https://infrasec.sh/post/cncf-kcsa/
 
