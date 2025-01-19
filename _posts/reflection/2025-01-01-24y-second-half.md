@@ -2,7 +2,7 @@
 title: 24년 하반기 회고
 author: rumi
 date: 2025-01-01
-categories: [Review]
+categories: [Reflection]
 tags: [career]
 ---
 
