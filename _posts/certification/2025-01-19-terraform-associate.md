@@ -1,40 +1,92 @@
 ---
-title: 24년 상반기 회고
+title: Terraform Associate (003) 취득
 author: rumi
-date: 2024-06-30
-categories: [Review]
+date: 2025-01-19
+categories: [Certification]
 tags: [career]
 ---
 
-## 24년 상반기가 끝났다
+## Terraform 자격증을 취득하다
+- [공식문서](https://developer.hashicorp.com/certifications/infrastructure-automation)
+- 테라폼의 경우 Associate와 Professional 2가지가 존재합니다.   
+    입문의 경우 Associate부터가 무난하기 때문에 저도 이것부터 시작했습니다.
+- 금액: 70.5$
+- 문제: 전부 객관식이고, 57문제
+- 결과: 시험 종료 후 바로 확인 가능('PASS'면 합격)
+- 뱃지: Credly 뱃지는 시험을 마친 후 25시간 후에 받았습니다.
 
- <img src="https://i.pinimg.com/originals/a0/a7/f9/a0a7f942180eeb1ed2f55ad7f6a79f9f.jpg" alt="양파쿵야" width="700" height="700" />
+![terraform-badge](/assets/img/posts/certification/terraform-associate-badge.png)
 
-## 키워드로 돌아보기
+## 공부 방법
+### 1. Udemy
+- [연습문제](https://www.udemy.com/course/terraform-associate-practice-exam/?couponCode=KEEPLEARNING)
+  - 연습문제들을 살펴보기 위해 구매했고 2번정도 돌려봤습니다.   
 
-- **공부**
-  - 작년에 비하면 올해는 공부에 몰두해서 지냈다고 할수있다. 전문성을 키우는 것보다 부족함을 느끼는 속도가 빨라서 멘탈도 부여잡고 나와의 싸움을 하느라 바빴다. 개발도서를 정말 많이 빌려서 약 20권정도 읽었다. 그리고 유데미, 유튜브 강의도 오랜만에 열심히 봤다.
-- **동료**
-  - 올해는 사내 신규입사자분들이 많았어서 다양한 자극들도 받을 수 있었다. 정말 세상에는 너무 멋진분들이 많았구나...
-- **스터디**
-  - 혼자 공부하는 스타일이였는데 의지박약이기도 하고 함께 스터디하는 맛에 들려 3개나 끝마쳤다. 안하던걸 하려고 하니까 부담감이 너무 심하게 다가왔지만 하다보니 어떻게든 다 하고 있는 나를 발견했다. 혼자서는 생각하지 못한부분들을 많이 배울 수 있었다.
-- **발표**
-  - 사내 발표도 해봤다. 기술관련 발표를 해본게 2년전이였고 실무에서는 처음이다보니 내가 뭐라고 발표를 하나 싶었었다. 내용도 계속 수정하고 시뮬레이션도 해봤지만 내가 말하고자 하는 핵심을 청자에게 완벽하게는 전달하지 못했다고 느껴졌다. 앞으로 더 많은 발표들을 들어보면서 다음 발표에는 조금 더 나아지도록 해봐야겠다.
-- **자격증**
-  - 쿠버네티스를 작년에 시작하면서 자격증을 따고싶다는 생각을 했었어서 23년 사이버먼데이때 할인가에 CKA를 구매했었다. 하나를 시작하니 불이 붙어서 우선은 _CKA, CKAD, KCNA_ 3개를 취득하는데 성공했다.
-  - 그리고 쿠버네티스 이전에 AWS를 많이 쓰기 때문에 *SAA*를 따려고 현회사 입사초반부터 생각했었으나 한번 공부하다가 포기했었다. 그러다가 다시 최근에 AWS를 많이 써왔음에도 모르는 부분이 많다고 느껴져서 다시 도전했고 6월달에 가까스로 합격했다.
-- **기록**
-  - 이제 블로그를 다시 관리하기로 했고 깃헙 블로그로 통일하기 위해 글들을 이전해왔다. 사실상 상반기에 3개밖에 쓰지 못했는데 쓸까했던 주제들은 많았었음에도 포스팅을 하지않으면 쉽게 잊혀지는 것 같다.
+### 2. 공식문서
+- [공식문서 튜토리얼](https://developer.hashicorp.com/terraform/tutorials/certification-003)
+  - 자세히 다 살펴보기엔 오래걸려서 유데미 문제를 통해 부족하다고 느낀부분만 조금더 챙겨봤습니다.
 
-## 키워드로 목표세우기
+### 3. 개인 준비
+1. 커맨드 외우기
+- 각 커맨드 사용법에 대해 간단한 숙지
+2. 타입, for문, 리소스나 모듈, dynamic 등 코드 작성
+- 코드를 보고 리소스명 확인, variable 타입과 실제 값 확인 등
+3. terraform 디렉토리 이해
+- `terraform.tfstate`, `.terraform` 하위에 저장되는 데이터 이해
+4. state 파일 관리
+- 저장되는 데이터 이해, 민감정보가 어떻게 저장되는지, state와 실제 코드가 불일치 하는 경우 발생하는 상황에 대한 이해
+5. provider
+- 어떻게 선언하고 동작하는지 개념
+6. Vault, Sentinal 
+- 왜 사용하고 어떤 특성인지, 어떻게 통합되는지
+7. 퍼블릭 모듈
+- 무조건 Github에 퍼블릭으로 등록되어야 함
+8. CLI/Community vs HCP 버전별 지원범위 차이점
+- VCS 여러개 사용
+    - 가능: HCP
+      - 워크스페이스에는 1개만 연결 가능하지만 여러개의 VCS 지원
+    - 불가능: 단일사용 cli/community
+- state lock
+    - 가능: HCP
+- encryption&backup
+    - 가능: HCP
+- Private Registry
+    - 가능: HCP
+9. 디버깅
+- `TF_LOG=TRACE` 제일 자세하게 확인하는 법
+10.  IaC의 이점
+- idempotent, consistent, repeatable, and predictable
+- asy to provision and apply infrastructure configurations, saving time
+- 위와 비슷한 맥락에서의 이점들을 이해하면 다른 지문들도 가능
+11.  테라폼 핵심 3단계
+- Write -> Plan -> Apply
+12.  Remote State with Locking
+- to avoid two or more different users accidentally running Terraform at the same time, and thus ensure that each Terraform run begins with the most recent updated state.
+- 락의 장점, 언제 걸고 풀어야 할지
+13.  terraform configuration
+```
+terraform{
+	required_version = ""
+	required_providers {
+		aws = {
+		
+		}
+	}
+	cloud {
+	}
+}
+```
+14. state 저장소 마이그레이션
+- [공식문서](https://developer.hashicorp.com/terraform/tutorials/cloud/cloud-migrate#migrate-the-state-file)
+15. 이전에 인프라에 배포된 리소스 import 하는방법
+- Before you run terraform import you must manually write a resource configuration block for the resource. The resource block describes where Terraform should map the imported object.
+- 무조건 구성블록 생성 후 `import` CLI 진행
+- [공식문서](https://developer.hashicorp.com/terraform/cli/import)
 
-- **개발**
-  - 알고리즘을 공부하면서 파이썬도 함께 공부하려고 한다. 업무상 직접 개발할 일이 줄어들었기도 해서 재활차원으로 조금씩 늘려가고자 계획중이다.
-- **스터디**
-  - _system-design-club-night_ 이름으로 활동했던 시스템 디자인 스터디의 활동기간은 끝났지만 멤버 모두 연장의사가 있어서 최소 2회는 더 이어갈 것 같다. 요구사항에 대한 최소한의 요건만 생각하고 준비했다보니 '트랜잭션', '예외처리', '검증' 등 디테일한 부분을 많이 놓쳤던 것 같다. 다음 활동에는 이 부분에 좀더 집중해서 준비하려고 한다.
-- **자격증**
-  - _CKS, KCSA_ 남은 2개를 준비하려고 한다. EKS를 사용하다보니 컨트롤 플레인이랑 보안부분을 다루는 것에 대해 경험도 지식도 부족해서 해보면 좋을 것 같다.
-  - _DVA, DOP_ 도 계획중이다. 이외에도 더 할지는 모르겠지만 현재 업무에서 쓰이는 서비스들을 다루는데 필요하다면 취득할 생각이 있다.
-- **기록**
-  - 회고는 가능하다면 월간으로 작성하는것도 좋을 것 같다.
-  - 기술에 대한 포스팅도 필수는 아니지만 1달 1회정도로 작성하면 도움이 될 것 같다.
+
+## 후기
+테라폼을 1년 넘게 사용해왔기 때문에 준비 과정은 오래 걸리지 않았고, 시험 내용도 비교적 어렵지 않았습니다. 유데미를 통해 문제를 풀어보기도 했지만, 실제 시험은 출제 방식이 조금 다르게 느껴졌습니다.
+
+그럼에도 불구하고, 테라폼에 대한 이해도와 사용 경험이 있다면 충분히 해결할 수 있을 정도의 난이도였습니다. 테라폼을 사용하면서 자신의 이해도를 측정해보고 싶다면, 자격증에 도전해보는 것도 좋은 선택일 것 같습니다.
+
+참고로 CNCF 시험은 PSI를 통해 진행되었지만, 이번 테라폼 시험은 Certiverse를 통해 진행되었습니다. Certiverse는 시험 시작 전 환경 확인이 간결하고, 시험 결과를 바로 보여주는 점이 정말 편리했습니다. 같은 객관식 문제라도 Certiverse는 시험 브라우저 환경이 넓고 전체적인 만족도가 높았습니다.
