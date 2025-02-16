@@ -3,7 +3,7 @@ title: Redis Cluster를 이해하고 Client 연결하기
 author: rumi
 date: 2025-02-16
 categories: [Tech]
-tags: [redis, redis-client, redis-cluster, go-redis, redis-py]
+tags: [redis, redis-client, redis-cluster, go-redis, redis-py, ioredis]
 ---
 
 ## Redis Cluster의 데이터 분배 방식
@@ -104,5 +104,5 @@ this.refreshSlotsCache((err) => {
 ### 참고문서
 [공식문서 redis-cluster](https://redis.io/learn/operate/redis-at-scale/scalability/redis-cluster-and-client-libraries)  
 [redis-py](https://redis.readthedocs.io/en/stable/_modules/redis/cluster.html#RedisCluster)  
-[go-redis]("https://github.com/redis/go-redis/blob/master/cluster_commands.gos)  
+[go-redis](https://github.com/redis/go-redis/blob/master/cluster_commands.gos)  
 [ioredis](https://github.com/redis/ioredis/blob/main/lib/cluster/index.ts)
