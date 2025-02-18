@@ -68,14 +68,15 @@ tags: [redis, redis-client, redis-cluster, go-redis, redis-py, ioredis]
                 ...
 ```
 ### [go-redis] 로직 알아보기
-- MOVED 발생시 해당 함수 호출로 맵 갱신
+MOVED 발생시 해당 함수 호출로 맵 갱신
 ```
 func (c cmdable) ClusterSlots(ctx context.Context) *ClusterSlotsCmd {
 	cmd := NewClusterSlotsCmd(ctx, "cluster", "slots")
 	_ = c(ctx, cmd)
 	return cmd
 }
-```
+```  
+
 ### [ioredis] 로직 알아보기
 ```
 this.refreshSlotsCache((err) => {
