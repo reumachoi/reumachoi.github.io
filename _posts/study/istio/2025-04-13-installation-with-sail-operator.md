@@ -41,8 +41,8 @@ Helm을 사용해본 경험이 있다면 기본적인 방법은 동일합니다.
 > helm repo update
 ```
 
-**2. Helm 차트 설치**
-- Sail Operator를 설치하고 성공적으로 완료된 것을 확인합니다.
+**2. Helm 차트 설치**  
+Sail Operator를 설치하고 성공적으로 완료된 것을 확인합니다.
 ```
 > helm install sail-operator sail-operator/sail-operator --version 1.0.0 --namespace sail-operator --create-namespace
 NAME: sail-operator
@@ -59,8 +59,8 @@ NAME                             READY   STATUS    RESTARTS   AGE     IP        
 sail-operator-6bfc7856c9-pm6pb   1/1     Running   0          2m28s   10.10.0.8   myk8s-control-plane   <none>           <none>
 ```
 
-**4. Istio 리소스 생성**
-- istio-system 네임스페이스를 생성하고, Istio 리소스를 적용합니다.
+**4. Istio 리소스 생성**  
+istio-system 네임스페이스를 생성하고, Istio 리소스를 적용합니다.
 
 ```
  kubectl create namespace istio-system
@@ -87,8 +87,8 @@ spec:
 EOF
 ```
 
-**5. IstioRevision 확인**
-- Istio 리소스가 생성되면 sail operator는 자동으로 IstioRevision을 생성합니다.
+**5. IstioRevision 확인**  
+Istio 리소스가 생성되면 sail operator는 자동으로 IstioRevision을 생성합니다.
 ```
 > k get IstioRevision
 NAME       NAMESPACE      READY   STATUS    IN USE   VERSION   AGE
