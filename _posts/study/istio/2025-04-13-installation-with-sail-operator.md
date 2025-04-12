@@ -63,7 +63,7 @@ sail-operator-6bfc7856c9-pm6pb   1/1     Running   0          2m28s   10.10.0.8 
 istio-system 네임스페이스를 생성하고, Istio 리소스를 적용합니다.
 
 ```
- kubectl create namespace istio-system
+> kubectl create namespace istio-system
 > cat <<EOF | kubectl apply -f-
 apiVersion: sailoperator.io/v1
 kind: Istio
