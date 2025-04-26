@@ -47,7 +47,7 @@ spec:
       version: v2
 ```
 
-### TrafficPolicy 설명
+## TrafficPolicy 상세 설명
 하위 6개의 설정들로 정책을 관리합니다.
 1. `loadBalancer`: 부하분산 알고리즘을 설정합니다.
 2. `connectionPool`: 업스트림으로의 커넥션 수를 조정합니다.
@@ -56,7 +56,7 @@ spec:
 5. `portLevelSettings`: 포트 개별 설정을 합니다.
 6. `tunnel`: TCP, TLS 터널링을 구성합니다.
 
-#### LoadBalancer
+### LoadBalancer
 **필드**
 - `simple`: 부하분산 알고리즘 방식을 설정합니다. 기본값은 'ROUND_ROBIN'으로 설정에서 생략됩니다.
   - RANDOM, LEAST_REQUEST 등의 방식들이 있고 워크로드에 맞는 방식을 선택할 수 있습니다.
@@ -89,7 +89,7 @@ spec:
 ```
 
 
-#### connectionPool
+### connectionPool
 **필드**
 - `tcp`: 커넥션 풀을 설정합니다. HTTP, TCP 모두 공통 설정.
 - `http`: HTTP에만 커넥션 풀을 설정합니다.
@@ -107,7 +107,7 @@ spec:
           interval: 75s
 ```
 
-#### OutlierDetection
+### OutlierDetection
 '서킷 브레이커'를 설정하기 위한 조건들을 설정합니다.
 
 **필드**  
@@ -126,7 +126,7 @@ spec:
 ```
 
 
-#### TLS
+### TLS
 **필드**  
 - `mode`: TLS 적용방식 설정(필수 설정 항목)
 
