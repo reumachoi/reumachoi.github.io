@@ -2,7 +2,7 @@
 title: Sail Operator로 Istio 설치하기
 author: rumi
 date: 2025-04-13
-categories: [Study, Istio]
+categories: [Tech, Istio]
 tags: [Kubernetes, Istio, Service Mesh, Sail Operator]
 ---
 

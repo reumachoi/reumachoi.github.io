@@ -2,7 +2,7 @@
 title: Kubestronaut가 되기까지의 1년
 author: rumi
 date: 2025-01-19
-categories: [Certification]
+categories: [Career, Certification]
 tags: [Kubestronaut, Kubernetes, CKA, CKAD, CKS, KCNA, KCSA]
 ---
 

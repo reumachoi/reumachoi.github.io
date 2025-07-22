@@ -2,7 +2,7 @@
 title: Redis Cluster를 이해하고 Client 연결하기
 author: rumi
 date: 2025-02-16
-categories: [Tech]
+categories: [Tech, Middleware]
 tags: [redis, redis-client, redis-cluster, go-redis, redis-py, ioredis]
 ---
 

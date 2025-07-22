@@ -2,7 +2,7 @@
 title: Istio Gateway를 Kubernetes API로 설정하기
 author: rumi
 date: 2025-04-13
-categories: [Study, Istio]
+categories: [Tech, Istio]
 tags: [Kubernetes, Istio, Service Mesh, Gateway API]
 ---
 

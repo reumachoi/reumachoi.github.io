@@ -2,7 +2,7 @@
 title: Terraform Associate (003) 취득
 author: rumi
 date: 2025-01-19
-categories: [Certification]
+categories: [Career, Certification]
 tags: [career]
 ---
 

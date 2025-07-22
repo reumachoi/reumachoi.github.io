@@ -2,7 +2,7 @@
 title: Envoy Sandbox로 손쉽게 필터 기능 확인해보기
 author: rumi
 date: 2025-04-19
-categories: [Study, Istio]
+categories: [Tech, Istio]
 tags: [Istio, Envoy, Sandbox, Filter, CORS, Redis, MySQL]
 ---
 
