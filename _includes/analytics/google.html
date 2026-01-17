@@ -1,13 +1,45 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.id }}"></script>
 <script>
-  document.addEventListener('DOMContentLoaded', () => {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
+  (function() {
+    var gaId = '{{ site.analytics.google.id }}';
+    var scriptUrl = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+    var loaded = false;
+
+    function loadGTM() {
+      if (loaded) return;
+      loaded = true;
+
+      var script = document.createElement('script');
+      script.src = scriptUrl;
+      script.async = true;
+      document.head.appendChild(script);
+
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gaId);
     }
 
-    gtag('js', new Date());
-    gtag('config', '{{ site.analytics.google.id }}');
-  });
+    var userInteracted = false;
+    function onInteraction() {
+      if (userInteracted) return;
+      userInteracted = true;
+      loadGTM();
+      
+      // Remove listeners to clean up
+      window.removeEventListener('scroll', onInteraction);
+      window.removeEventListener('mousemove', onInteraction);
+      window.removeEventListener('touchstart', onInteraction);
+      window.removeEventListener('keydown', onInteraction);
+    }
+
+    // Add event listeners for interaction
+    window.addEventListener('scroll', onInteraction, { passive: true });
+    window.addEventListener('mousemove', onInteraction, { passive: true });
+    window.addEventListener('touchstart', onInteraction, { passive: true });
+    window.addEventListener('keydown', onInteraction, { passive: true });
+    
+    // Safety fallback: load after 5 seconds if no interaction occurs (optional, but good for data consistency)
+    setTimeout(loadGTM, 5000);
+  })();
 </script>
