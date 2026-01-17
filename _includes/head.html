@@ -81,7 +81,8 @@
   <link rel="stylesheet" href="{{ site.data.origin[type].webfonts | relative_url }}">
 
   <!-- Font Awesome Icons -->
-  <link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}">
+  <link rel="preload" href="{{ site.data.origin[type].fontawesome.css | relative_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="{{ site.data.origin[type].fontawesome.css | relative_url }}"></noscript>
 
   <!-- 3rd-party Dependencies -->
 
