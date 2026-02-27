@@ -1,9 +1,9 @@
 ---
-title: "(WIP) OpenClaw 설치 가이드: Lume 기반 macOS 가상화"
+title: "OpenClaw 설치 가이드: Lume 기반 macOS 가상화"
 author: rumi
 date: 2026-02-21
 categories: [AI]
-tags: [OpenClaw, Lume, macOS, Personal AI Assistant, VM, Docker]
+tags: [OpenClaw, Lume, macOS, Personal AI Assistant, VM, Docker, Slack]
 ---
 
 ## 개요
@@ -65,8 +65,14 @@ tags: [OpenClaw, Lume, macOS, Personal AI Assistant, VM, Docker]
 
 
 ### OpenClaw Channel 설정
-1. **Slack - pairing**  
+1. **Slack - pairing(2026-02-27 updated)**  
 내가 만든 봇에게 디엠을 보내는 경우 페어링이 필요하다.  
 다음 메시지로 정보랑 CLI를 알려주면 그대로 실행하면 된다.
 ![openclaw-pairing-slack](/assets/img/posts/ai/openclaw-pairing-slack.png)
 ![openclaw-pairing-cli](/assets/img/posts/ai/openclaw-pairing-cli.png)
+
+2026-02-27 update: 
+openclaw v2026.2.26 이후로 해당 PR - Closed 되어 해결됨  
+(기존에 개인 DM 외 public 채널에서 멘션시 응답이 안오는 문제)
+https://github.com/openclaw/openclaw/issues/21773
+![openclaw-pairing-slack-resolve](/assets/img/posts/ai/openclaw-pairing-slack-resolve.png)
