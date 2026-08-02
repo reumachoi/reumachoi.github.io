@@ -24,3 +24,6 @@ package-lock.json
 
 # Misc
 .DS_Store
+
+# Auto Claude data directory
+.auto-claude/
